@@ -1,0 +1,41 @@
+2018/01/18 16:11:57.294 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/01/18 16:12:02.909 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/01/18 16:12:16.479 [D] [server.go:2619] ::1 - - [18/Jan/2018 04:12:16] "GET /user HTTP/1.1 200 0" 0.000313  Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/01/18 16:13:54.201 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/01/18 16:14:06.778 [D] [server.go:2619] ::1 - - [18/Jan/2018 04:14:06] "GET /user HTTP/1.1 200 0" 0.000271  Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/01/18 16:53:37.314 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/01/18 16:58:30.098 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/01/18 16:58:31.189 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/01/18 16:59:46.397 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/01/18 17:00:39.255 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/01/18 17:01:11.415 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/01/18 17:01:14.616 [C] [asm_amd64.s:509] the request url is  /user
+2018/01/18 17:01:14.616 [C] [asm_amd64.s:509] Handler crashed with error RegisterModel must be run before BootStrap
+2018/01/18 17:01:14.616 [C] [asm_amd64.s:509] /usr/local/Cellar/go/1.9.2/libexec/src/runtime/asm_amd64.s:509
+2018/01/18 17:01:14.616 [C] [asm_amd64.s:509] /usr/local/Cellar/go/1.9.2/libexec/src/runtime/panic.go:491
+2018/01/18 17:01:14.616 [C] [asm_amd64.s:509] /Users/songliangliang/go/src/github.com/astaxie/beego/orm/models_boot.go:308
+2018/01/18 17:01:14.616 [C] [asm_amd64.s:509] /Users/songliangliang/go/src/awesomeProject/quickstart/controllers/default.go:23
+2018/01/18 17:01:14.616 [C] [asm_amd64.s:509] /usr/local/Cellar/go/1.9.2/libexec/src/runtime/asm_amd64.s:510
+2018/01/18 17:01:14.617 [C] [asm_amd64.s:509] /usr/local/Cellar/go/1.9.2/libexec/src/reflect/value.go:434
+2018/01/18 17:01:14.617 [C] [asm_amd64.s:509] /usr/local/Cellar/go/1.9.2/libexec/src/reflect/value.go:302
+2018/01/18 17:01:14.617 [C] [asm_amd64.s:509] /Users/songliangliang/go/src/github.com/astaxie/beego/router.go:847
+2018/01/18 17:01:14.617 [C] [asm_amd64.s:509] /usr/local/Cellar/go/1.9.2/libexec/src/net/http/server.go:2619
+2018/01/18 17:01:14.618 [C] [asm_amd64.s:509] /usr/local/Cellar/go/1.9.2/libexec/src/net/http/server.go:1801
+2018/01/18 17:01:14.618 [C] [asm_amd64.s:509] /usr/local/Cellar/go/1.9.2/libexec/src/runtime/asm_amd64.s:2337
+2018/01/18 17:01:42.591 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/01/18 17:02:44.408 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/01/18 17:02:45.591 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/01/18 17:03:12.017 [D] [server.go:2619] ::1 - - [18/Jan/2018 05:03:11] "GET /user HTTP/1.1 200 0" 0.046969  Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/01/18 17:03:37.539 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/01/18 17:04:18.935 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/01/18 17:04:20.078 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/01/18 17:04:25.050 [D] [server.go:2619] ::1 - - [18/Jan/2018 05:04:25] "GET /user HTTP/1.1 200 0" 0.000885  Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/01/18 17:09:00.274 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/01/18 17:09:01.603 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/01/18 17:11:05.889 [I] [asm_amd64.s:2337] http server Running on http://:8080
+2018/01/18 17:11:12.355 [D] [server.go:2619] ::1 - - [18/Jan/2018 05:11:12] "GET /user HTTP/1.1 200 0" 0.000933  Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
