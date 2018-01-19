@@ -54,7 +54,7 @@ func Show(){
 						beego.Info(fmt.Sprintf("【拍卖管理-定时更新自留竞拍记录】任务ID: %d 存在竞拍记录，最后一次竞拍人为自拍人:%d ，更新为成交", v.Id, maxAuctionUser))
 						if maxAuctionStatus != 2 {
 							bid := new(models.AuctionOlBid)
-							bid.Id = v.Id
+							bid.Id = v.MaxAuctionId
 							bid.Status = 2
 							updateBidRecord(bid)
 						}
