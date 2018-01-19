@@ -27,7 +27,7 @@ func Show(){
 		ret, err := services.SelectSchedule(curPage, pageSize, time.Now().Unix()*1000)
 		beego.Info(fmt.Sprintf("【拍卖管理-定时更新自留竞拍记录】当前页: %d,可能需要批量自留的任务列表长度: %d", curPage, len(ret)))
 		curPage++
-		if err == nil && len(ret) == 0 {
+		if err == nil || len(ret) == 0 {
 			break
 		}
 	label:
