@@ -86,14 +86,14 @@ func elasticParams(results *[]models.Item)  {
 		completion:=&elastic.SuggestField{}
 		completion.Input(
 			v.ItemName,
-			v.ItemName+v.ItemUnit+v.ItemSize,
-			v.ItemName+v.ItemSize+v.ItemUnit,
-			v.ItemUnit+v.ItemSize+v.ItemName,
-			v.ItemSize+v.ItemUnit+v.ItemName,
-			v.Brand+v.ItemName+v.ItemUnit+v.ItemSize,
-			v.Brand+v.ItemName+v.ItemSize+v.ItemUnit,
-			v.Brand+v.ItemUnit+v.ItemSize+v.ItemName,
-			v.Brand+v.ItemSize+v.ItemUnit+v.ItemName)
+			v.ItemName+" "+v.ItemUnit+" "+v.ItemSize,
+			v.ItemName+" "+v.ItemSize+" "+v.ItemUnit,
+			v.ItemUnit+" "+v.ItemSize+" "+v.ItemName,
+			v.ItemSize+" "+v.ItemUnit+" "+v.ItemName,
+			v.Brand+v.ItemName+" "+v.ItemUnit+" "+v.ItemSize,
+			v.Brand+v.ItemName+" "+v.ItemSize+" "+v.ItemUnit,
+			v.Brand+v.ItemUnit+" "+v.ItemSize+" "+v.ItemName,
+			v.Brand+v.ItemSize+" "+v.ItemUnit+" "+v.ItemName)
 		data,_:=json.Marshal(completion)
 		beego.Info(fmt.Sprintf("封装过后的值：%s",string(data)))
 		tags:=[]string{v.Brand,v.ItemName,v.ItemUnit,v.ItemSize,v.FirstCategory,v.SecondCategory}
